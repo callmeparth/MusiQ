@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <!--<script 
+    type="text/javascript" 
+    src="http://gdata.youtube.com/feeds/users/GoogleDevelopers/uploads?v=2&alt=json-in-script&format=5&callback=showMyVideos">
+
+    function showMyVideos(data) {
+        var feed = data.feed;
+        var entries = feed.entry || [];
+        var html = ['<ul>'];
+        for (var i = 0; i < entries.length; i++) {
+        var entry = entries[i];
+        var title = entry.title.$t;
+        html.push('<li>', title, '</li>');
+  }
+  html.push('</ul>');
+  document.getElementById('videos').innerHTML = html.join('');
+} 
+</script>-->
+    <title>MusiQ</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+<div class="page">
+    <h1>MusiQ</h1>
+                
+    <h2>Search</h2>
+    <form action="/results" method="POST" class="search-box">
+        <input type="text" size="30" placeholder="Artist" name="artist_term">
+        <input type="text" size="20" placeholder="Song" name="song_term">
+        <input type="submit" value="Search">
+    </form>
+
+    <h2>Saved</h2>
+    
+
+
+    <img width='50px' height='50px' src="/static/fork-knife.jpg" />
+</div>
+</body>
+</html>
